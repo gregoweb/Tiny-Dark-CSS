@@ -6,7 +6,7 @@ Tiny-Dark-CSS is a ready to use Lightweight CSS Framework and not required any J
 
 ## Features
 
-- Ready to use. Only download and include on your pages.
+- Ready to use. Only download and include styles.css on your pages.
 - No classes, only standar HTML5 elements.
 - Very lightweight. Little more than 1Kb minified and gzipped.
 - Write using SCSS
