@@ -1,0 +1,85 @@
+:root {
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+$font-stack: sans-serif;
+$primary-color: #fff0e6;
+$secondary-color: #bb86fc;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$bg-color:#1F1B24;
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+  font: $font-stack;
+  color: $primary-color;
+  background-color: $bg-color;
+  margin: 10px 7%;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+    &:hover {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
+
+h1, h2, h3, h4 {
+    color: $secondary-color;
+}
+
+@mixin box {
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+@mixin horizontal-list {
+    @include reset-list;
+    li {
+        display: inline-block;
+    }
+}
+
+nav ul {
+    @include horizontal-list;
+}
+
+button, nav ul li a {
+    color: $secondary-color;
+    background-color: $bg-color;
+    border:1px solid $secondary-color;
+    @include box;
+    &:hover {
+        text-decoration: none;
+        color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+input, textarea {
+
+    background-color: #f0ecf9;
+    @include box;
+    border: none;
+    color: #121212;
+
+}
+
